@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,8 @@
     <title>Bee Wheel</title>
 </head>
 <body>
-    <div class="contenedor">
-        <h1>Concursantes</h1>
-        <div class="concursantes">
-            <canvas id="idcanvas" width="600" height="600"></canvas>
-            <br>
-            <button onclick="sortear()"><span id="idestado">Sortear</span></button>
-            <div class="mark-winner"></div>
-        </div>
-    </div>
-    <script src="./index.js" type="text/javascript"></script>
-    <p>in progresss</p>
-    <div class="container"> 
+    <div class="container">
+        <!-- formulario -->
         <div class="form">
             <div class="acciones">
                 <input id="nombre" placeholder="Ingresar nombre" type="text">
@@ -28,16 +19,18 @@
                 <button id="borrar-ultimo">BORRAR ULTIMO</button>
             </div>
         </div>
-        
-
-        <div class="roulette"></div>
+        <!-- ruleta -->
+        <div class="roulette">
+            <h1>Concursantes</h1>
+            <div class="concursantes">
+                <canvas id="idcanvas" width="600" height="600"></canvas>
+                <br>
+                <button onclick="sortear()"><span id="idestado">Sortear</span></button>
+                <div class="mark-winner"></div>
+            </div>
+        </div>
     </div>
     <script src="index.js" type="text/javascript"></script>
 </body>
+
 </html>
-
-
-
-
-
-

@@ -22,8 +22,29 @@ const array_concursantes=
     ,'Jennifer'
     ,'Marcos'
     ,'Margarita'
-    ,'Marcos'
+    ,'Marcos' 
 ];
+
+//form
+document.querySelector("#btn-agregar").addEventListener("click", agregar);
+
+
+/*let array_concursantes= [];*/
+
+function agregar() {
+    let nombre = document.querySelector('#nombre').value;
+
+    //agrego elemento al array
+    array_concursantes.push(nombre);
+    console.log(array_concursantes);
+
+    //vaciar el input
+    document.querySelector('#nombre').value = "";
+
+}
+
+//ruleta
+
 let canvas=document.getElementById("idcanvas");
 let context=canvas.getContext("2d");
 let center=canvas.width/2;
@@ -39,6 +60,7 @@ context.arc(center,center,center-10,0, 2*Math.PI);
 context.lineTo(center,center);
 context.fillStyle ='black';
 context.fill();
+
 for (var i = 0; i < array_concursantes.length; i++) {
     context.beginPath();
     context.moveTo(center,center);
@@ -84,32 +106,5 @@ function random_color(){
         i++;
     }
     return '#' +color;
-}
-marca_de_verificación_blanca
-ojos
-manos_levantadas
-
-
-
-
-
-
-
-
-document.querySelector("#btn-agregar").addEventListener("click", agregar);
-
-
-let array_concursantes= [];
-
-function agregar() {
-    let nombre = document.querySelector('#nombre').value;
-
-    //agrego elemento al array
-    array_concursantes.push(nombre);
-    console.log(array_concursantes);
-
-    //vaciar el input
-    document.querySelector('#nombre').value = "";
-
 }
 
