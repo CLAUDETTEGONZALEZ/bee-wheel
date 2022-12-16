@@ -1,6 +1,6 @@
 const array_concursantes=
 [
-    'Ana G.'
+    /* 'Ana G.'
     ,'Claudette G.'
     ,'Delia'
     ,'Miriam G'
@@ -22,7 +22,7 @@ const array_concursantes=
     ,'Jennifer'
     ,'Marcos'
     ,'Margarita'
-    ,'Marcos' 
+    ,'Marcos'  */
 ];
 
 //form
@@ -33,19 +33,20 @@ document.querySelector("#btn-agregar").addEventListener("click", agregar);
 
 function agregar() {
     let nombre = document.querySelector('#nombre').value;
-
+    
     //agrego elemento al array
     array_concursantes.push(nombre);
+    //console.log(array_concursantes);
     console.log(array_concursantes);
-
     //vaciar el input
     document.querySelector('#nombre').value = "";
-
+    drawRoulette ();
+    
 }
 
 //ruleta
-
-let canvas=document.getElementById("idcanvas");
+function drawRoulette (){
+    let canvas=document.getElementById("idcanvas");
 let context=canvas.getContext("2d");
 let center=canvas.width/2;
 context.beginPath();
@@ -78,6 +79,8 @@ for (var i = 0; i < array_concursantes.length; i++) {
     context.fillText(array_concursantes[i], canvas.width-30, center);
     context.restore();
 }
+}
+
 let pos_ini=0;
 let clic=0;
 let movement;
