@@ -40,6 +40,7 @@ function agregar() {
     console.log(array_concursantes);
     //vaciar el input
     document.querySelector('#nombre').value = "";
+    
     drawRoulette ();
     
 }
@@ -100,14 +101,8 @@ function sortear(){
     }
 }
 function random_color(){
-    let ar_digit=['2','3','4','5','6','7','8','9'];
-    let color='';
-    let i=0;
-    while(i<6){
-        let pos=Math.round(Math.random()*(ar_digit.length-1));
-        color=color+''+ar_digit[pos];
-        i++;
-    }
-    return '#' +color;
-}
-
+    let colores = [ "#4A0028","#882D17","#804000","#F6AE2D","#FFB01E","#E48400"];
+    let color = colores[Math.floor(Math.random() * colores.length)];
+    
+    return color;
+  };
