@@ -61,6 +61,8 @@ function borrarUltimo() {
 let canvas=document.getElementById("idcanvas");
 let context=canvas.getContext("2d");
 let center=canvas.width/2;
+
+
 context.beginPath();
 context.moveTo(center,center);
 context.arc(center,center,center,0, 2*Math.PI);
@@ -71,7 +73,8 @@ context.beginPath();
 context.moveTo(center,center);
 context.arc(center,center,center-10,0, 2*Math.PI);
 context.lineTo(center,center);
-context.fillStyle ='black';
+context.fillStyle ='#A24D03';
+
 context.fill();
 
 function drawRoulette (){

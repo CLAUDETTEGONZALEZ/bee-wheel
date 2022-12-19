@@ -44,7 +44,7 @@ button{
 .mark-winner{
     position: absolute;
     clip-path: polygon(0 10px,60px 0,60px 20px);
-    background: red;
+    background: black;
     width: 60px;
     height: 20px;
     top: 50%;
