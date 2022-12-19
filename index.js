@@ -27,6 +27,9 @@ const array_concursantes=
 
 //form
 document.querySelector("#btn-agregar").addEventListener("click", agregar);
+document.querySelector("#btn-reset").addEventListener("click", reset);
+document.querySelector("#borrar-ultimo").addEventListener("click", borrarUltimo);
+
 
 
 /*let array_concursantes= [];*/
@@ -44,10 +47,35 @@ function agregar() {
     drawRoulette ();
     
 }
+function reset() {
+    array_concursantes.length = 0;
+    drawRoulette(); 
+}
+function borrarUltimo() {
+    array_concursantes.pop()
+    console.log(array_concursantes);
+    drawRoulette();
 
+}
 //ruleta
+let canvas=document.getElementById("idcanvas");
+let context=canvas.getContext("2d");
+let center=canvas.width/2;
+context.beginPath();
+context.moveTo(center,center);
+context.arc(center,center,center,0, 2*Math.PI);
+context.lineTo(center,center);
+context.fillStyle ='#33333333';
+context.fill();
+context.beginPath();
+context.moveTo(center,center);
+context.arc(center,center,center-10,0, 2*Math.PI);
+context.lineTo(center,center);
+context.fillStyle ='black';
+context.fill();
+
 function drawRoulette (){
-    let canvas=document.getElementById("idcanvas");
+let canvas=document.getElementById("idcanvas");
 let context=canvas.getContext("2d");
 let center=canvas.width/2;
 context.beginPath();
@@ -101,7 +129,7 @@ function sortear(){
     }
 }
 function random_color(){
-    let colores = [ "#4A0028","#882D17","#804000","#F6AE2D","#FFB01E","#E48400"];
+    let colores = [ "#882D17","#804000","#F6AE2D","#FFB01E","#E48400","#E89700","#E96C11","#A24D03","#8A5728","#341302","#290E04","#000000"];
     let color = colores[Math.floor(Math.random() * colores.length)];
     
     return color;
