@@ -1,3 +1,8 @@
+function redireccionar (){
+    setTimeout( function() { document.location.href="http://127.0.0.1:5504/index.html" }, 4000 );
+}
+
+
 const dist = document.querySelector('#bee');
 
 document.querySelector('button').addEventListener('click', () => {
@@ -17,6 +22,7 @@ function move() {
     function frame() {
       if (width >= 100) {
         clearInterval(id);
+        redireccionar();
         i = 0;
       } else {
         width++;
