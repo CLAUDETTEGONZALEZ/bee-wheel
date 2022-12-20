@@ -48,7 +48,7 @@ context.beginPath();
 context.moveTo(center,center);
 context.arc(center,center,center-10,0, 2*Math.PI);
 context.lineTo(center,center);
-context.fillStyle ='#A24D03';
+context.fillStyle ='#E48400';
 
 context.fill();
 
@@ -66,7 +66,7 @@ context.beginPath();
 context.moveTo(center,center);
 context.arc(center,center,center-10,0, 2*Math.PI);
 context.lineTo(center,center);
-context.fillStyle ='black';
+context.fillStyle ='#E48400';
 context.fill();
 
 for (var i = 0; i < array_concursantes.length; i++) {
