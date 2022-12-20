@@ -1,29 +1,4 @@
-const array_concursantes=
-[
-    /* 'Ana G.'
-    ,'Claudette G.'
-    ,'Delia'
-    ,'Miriam G'
-    ,'Miriam Q'
-    ,'Paola A.'
-    ,'Rocio L.'
-    ,'Sergio C'
-    ,'Vero'
-    ,'Yamila'
-    ,'Ainhoa'
-    ,'Aldara'
-    ,'Anyi'
-    ,'Carmen'
-    ,'Cele'
-    ,'Celia'
-    ,'Delia'
-    ,'Diana'
-    ,'Eva'
-    ,'Jennifer'
-    ,'Marcos'
-    ,'Margarita'
-    ,'Marcos'  */
-];
+const array_concursantes = [];
 
 //form
 document.querySelector("#btn-agregar").addEventListener("click", agregar);
@@ -97,7 +72,7 @@ context.fill();
 for (var i = 0; i < array_concursantes.length; i++) {
     context.beginPath();
     context.moveTo(center,center);
-    context.arc(center,center,center-20,i*2*Math.PI/array_concursantes.length, (i+1)*2*Math.PI/array_concursantes.length);
+    context.arc(center,center,center-10,i*2*Math.PI/array_concursantes.length, (i+1)*2*Math.PI/array_concursantes.length);
     context.lineTo(center,center);
     context.fillStyle =random_color();
     context.fill();
@@ -105,7 +80,7 @@ for (var i = 0; i < array_concursantes.length; i++) {
     context.translate(center, center);
     context.rotate(3*2*Math.PI/(5*array_concursantes.length)+i*2*Math.PI/array_concursantes.length);
     context.translate(-center, -center);
-    context.font = "13px Comic Sans MS";
+    context.font = "12px Comic Sans MS";
     context.textAlign = "right";
     context.fillStyle = "white";
     context.fillText(array_concursantes[i], canvas.width-30, center);
