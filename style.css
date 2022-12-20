@@ -76,6 +76,13 @@ input[type=text] {
 ::placeholder{
     font-family: 'Lobster';
 }
+#logo{
+    height: 53px;
+    width: 160px;
+    margin-right: 10px;
+
+
+}
 
 
 
