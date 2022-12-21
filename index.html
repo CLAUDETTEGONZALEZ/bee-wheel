@@ -9,25 +9,25 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Bee Wheel</title>
 </head>
+
 <body>
     <div class="container">
         <!-- formulario -->
         <div class="form">
             <img src="./imagenes/Logo (1).png" id="logo" alt="Logo-bee">
             <div class="acciones">
-                <input id="nombre" placeholder="Ingresar nombre" type="text">
-                <button id="btn-agregar">Agregar</button>
-                <button id="btn-reset">Vaciar</button>
-                <button id="borrar-ultimo">Borrar Ultimo</button>
+                <input id="nombre" placeholder="Enter name" type="text">
+                <button id="btn-agregar">Add</button>
+                <button id="btn-reset">Delete</button>
+                <button id="borrar-ultimo">Delete last</button>
             </div>
         </div>
         <!-- ruleta -->
         <div class="roulette">
-            <!-- <h1>Concursantes</h1> -->
             <div class="concursantes">
                 <canvas id="idcanvas" width="600" height="600"></canvas>
                 <br>
-                <button onclick="sortear()"><span id="idestado">Sortear</span></button>
+                <button onclick="sortear()"><span id="idestado">Raffle</span></button>
                 <div class="mark-winner"></div>
             </div>
         </div>

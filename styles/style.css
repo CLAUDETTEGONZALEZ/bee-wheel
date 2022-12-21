@@ -1,41 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-color:#FFF59D; 
-/*     background-image: url(background1.png);*/    
+
+body {
+    background-color: #FFF59D;
+    /*     background-image: url(background1.png);*/
     width: 100%;
     height: 100vh;
-    cursor: url(./imagenes/icons8-bee-30.png), auto;
+    cursor: url(../imagenes/icons8-bee-30.png), auto;
     font-family: 'Lobster', cursive;
 }
-.container{
+
+.container {
     padding: 10px;
     width: 980px;
     max-width: calc(100% - 20px);
     margin: auto;
+    margin-top: 50px;
     margin-top: 0px;
     color: #fff;
-    font-family: 'Lobster' ;
+    font-family: 'Lobster';
 }
-.concursantes{
+
+.concursantes {
     margin-top: 20px;
     text-align: center;
     margin: auto;
     position: relative;
 }
-canvas{
-    margin-top:0px;
+
+canvas {
+    margin-top: 10px;
     position: relative;
-    z-index:1;
+    z-index: 1;
 }
-.roulette{
+
+.roulette {
     margin-top: 5%;
 }
-button{
+
+button {
     font-family: 'Lobster';
     position: relative;
     padding: 10px 20px;
@@ -48,9 +55,10 @@ button{
     cursor: pointer;
     margin-top: 10px;
 }
-.mark-winner{
+
+.mark-winner {
     position: absolute;
-    clip-path: polygon(0 10px,60px 0,60px 20px);
+    clip-path: polygon(0 10px, 60px 0, 60px 20px);
     background: black;
     width: 60px;
     height: 20px;
@@ -59,7 +67,9 @@ button{
     z-index: 10;
     box-shadow: 0 0 3px #33333399;
 }
-.form{
+
+.form {
+    position: relative;
     margin-bottom: -5%;
     display: flex;
     height: 10vh;
@@ -68,27 +78,19 @@ button{
     justify-content: center;
     align-items: center;
 }
+
 input[type=text] {
     padding: 12px;
     border-color: transparent;
     border-radius: 8px;
 }
-::placeholder{
+
+::placeholder {
     font-family: 'Lobster';
 }
-#logo{
+
+#logo {
     height: 53px;
     width: 160px;
     margin-right: 10px;
-
-
 }
-
-
-
-
-
-
-
-
-
