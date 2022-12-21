@@ -1,13 +1,9 @@
-const array_concursantes = [];
+let array_concursantes = [];
 
 //form
 document.querySelector("#btn-agregar").addEventListener("click", agregar);
 document.querySelector("#btn-reset").addEventListener("click", reset);
 document.querySelector("#borrar-ultimo").addEventListener("click", borrarUltimo);
-
-
-
-/*let array_concursantes= [];*/
 
 function agregar() {
     let nombre = document.querySelector('#nombre').value;
@@ -32,11 +28,11 @@ function borrarUltimo() {
     drawRoulette();
 
 }
+
 //ruleta
 let canvas=document.getElementById("idcanvas");
 let context=canvas.getContext("2d");
 let center=canvas.width/2;
-
 
 context.beginPath();
 context.moveTo(center,center);
