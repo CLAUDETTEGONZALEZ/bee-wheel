@@ -1,6 +1,6 @@
 function redirect() {
   setTimeout(function () {
-    document.location.href = "http://127.0.0.1:5504/index.html"
+    document.location.href =`${window.location.origin}/index.html`
   }, 3000);
 }
 
