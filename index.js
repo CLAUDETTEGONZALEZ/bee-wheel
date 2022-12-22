@@ -76,7 +76,7 @@ for (var i = 0; i < array_concursantes.length; i++) {
     context.translate(center, center);
     context.rotate(3*2*Math.PI/(5*array_concursantes.length)+i*2*Math.PI/array_concursantes.length);
     context.translate(-center, -center);
-    context.font = "12px Comic Sans MS";
+    context.font = "25px Comic Sans MS";
     context.textAlign = "right";
     context.fillStyle = "white";
     context.fillText(array_concursantes[i], canvas.width-30, center);
