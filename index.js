@@ -95,11 +95,11 @@ function sortear(){
             canvas.style.transform='rotate('+pos_ini+'deg)';
         },10);
         clic=1;
-        document.getElementById("idestado").innerHTML="Detener";
+        document.getElementById("idestado").innerHTML="Stop";
     }else{
         clearInterval(movement);
         clic=0;
-        document.getElementById("idestado").innerHTML="Sortear";
+        document.getElementById("idestado").innerHTML="Start";
     }
 }
 function random_color(){
