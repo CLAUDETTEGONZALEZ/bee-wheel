@@ -81,8 +81,8 @@ button {
 
 input[type=text] {
     padding: 12px;
-    border-color: transparent;
     border-radius: 8px;
+    border-color: #804000;
 }
 
 ::placeholder {
